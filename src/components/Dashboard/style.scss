@@ -1,0 +1,149 @@
+@import '../../styles/variables';
+
+.contenedor-portafolio {
+  width: 100%;
+
+  .top {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $violeta;
+    h1 {
+      margin: 0;
+      color: $violeta;
+    }
+
+    button {
+      border-radius: 5px;
+      background-color: $violeta;
+      color: white;
+      font-size: 18px;
+      padding: 8px 30px;
+      border: none;
+      margin-left: auto;
+      margin-right: 90px;
+      cursor: pointer;
+      margin-bottom: 10px;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+    .link-ordenes {
+      border: 1px solid $violeta;
+      border-radius: 5%;
+      margin-left: auto;
+      border-radius: 100px;
+      padding: 5px 15px;
+      color: $gris-sidebar;
+      background-color: $gris-tabla;
+      cursor: pointer;
+    }
+  }
+  .general {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    .contenedor-posiciones {
+      width: 50%;
+      h3 {
+        text-align: left;
+        color: $gris-sidebar;
+      }
+      .posicion {
+        display: flex;
+        flex-direction: row;
+
+        &:nth-child(even) {
+          background-color: #f2f2f2;
+        }
+        &:nth-child(odd) {
+          background-color: #6480f326;
+        }
+
+        .tit {
+          font-weight: 700;
+          color: $gris-sidebar;
+        }
+
+        .item {
+          width: 100%;
+          height: 30px;
+          color: rgb(46, 46, 46);
+          text-align: center;
+        }
+        .subio {
+          position: relative;
+          &::before {
+            content: '';
+            width: 0;
+            height: 0;
+            border-right: 10px solid transparent;
+            border-top: 10px solid transparent;
+            border-left: 10px solid transparent;
+            border-bottom: 15px solid $subio;
+
+            position: absolute;
+            left: 0;
+            top: -5;
+          }
+        }
+        .bajo {
+          position: relative;
+
+          &::before {
+            content: '';
+            width: 0;
+            height: 0;
+            border-right: 10px solid transparent;
+            border-top: 10px solid transparent;
+            border-left: 10px solid transparent;
+            border-bottom: 15px solid $bajo;
+            position: absolute;
+            transform: rotate(180deg);
+            left: 0;
+            top: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.contenedor-der {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  .grafico {
+    margin-top: 40px;
+    padding: 0 15%;
+
+    .tit-h5 {
+      color: $gris-sidebar;
+    }
+  }
+
+  .span-posicion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+
+    span {
+      margin: 15px 30px;
+      border-radius: 5px;
+      border-left: 3px solid $violeta;
+      width: 200px;
+      text-align: left;
+      font-size: 20px;
+      padding: 0 30px;
+      background-color: $gris-tabla;
+      height: 50px;
+      color: $gris-sidebar;
+      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+  }
+}

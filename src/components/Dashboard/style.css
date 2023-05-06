@@ -1,0 +1,135 @@
+.contenedor-portafolio {
+  width: 100%;
+}
+.contenedor-portafolio .top {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #6480f3;
+}
+.contenedor-portafolio .top h1 {
+  margin: 0;
+  color: #6480f3;
+}
+.contenedor-portafolio .top button {
+  border-radius: 5px;
+  background-color: #6480f3;
+  color: white;
+  font-size: 18px;
+  padding: 8px 30px;
+  border: none;
+  margin-left: auto;
+  margin-right: 90px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.contenedor-portafolio .top button:hover {
+  opacity: 0.7;
+}
+.contenedor-portafolio .top .link-ordenes {
+  border: 1px solid #6480f3;
+  border-radius: 5%;
+  margin-left: auto;
+  border-radius: 100px;
+  padding: 5px 15px;
+  color: #2f3447;
+  background-color: #ededed;
+  cursor: pointer;
+}
+.contenedor-portafolio .general {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.contenedor-portafolio .general .contenedor-posiciones {
+  width: 50%;
+}
+.contenedor-portafolio .general .contenedor-posiciones h3 {
+  text-align: left;
+  color: #2f3447;
+}
+.contenedor-portafolio .general .contenedor-posiciones .posicion {
+  display: flex;
+  flex-direction: row;
+}
+.contenedor-portafolio .general .contenedor-posiciones .posicion:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.contenedor-portafolio .general .contenedor-posiciones .posicion:nth-child(odd) {
+  background-color: rgba(100, 128, 243, 0.1490196078);
+}
+.contenedor-portafolio .general .contenedor-posiciones .posicion .tit {
+  font-weight: 700;
+  color: #2f3447;
+}
+.contenedor-portafolio .general .contenedor-posiciones .posicion .item {
+  width: 100%;
+  height: 30px;
+  color: rgb(46, 46, 46);
+  text-align: center;
+}
+.contenedor-portafolio .general .contenedor-posiciones .posicion .subio {
+  position: relative;
+}
+.contenedor-portafolio .general .contenedor-posiciones .posicion .subio::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-bottom: 15px solid #3fb923;
+  position: absolute;
+  left: 0;
+  top: -5;
+}
+.contenedor-portafolio .general .contenedor-posiciones .posicion .bajo {
+  position: relative;
+}
+.contenedor-portafolio .general .contenedor-posiciones .posicion .bajo::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-bottom: 15px solid rgb(238, 79, 79);
+  position: absolute;
+  transform: rotate(180deg);
+  left: 0;
+  top: 8px;
+}
+
+.contenedor-der {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.contenedor-der .grafico {
+  margin-top: 40px;
+  padding: 0 15%;
+}
+.contenedor-der .grafico .tit-h5 {
+  color: #2f3447;
+}
+.contenedor-der .span-posicion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.contenedor-der .span-posicion span {
+  margin: 15px 30px;
+  border-radius: 5px;
+  border-left: 3px solid #6480f3;
+  width: 200px;
+  text-align: left;
+  font-size: 20px;
+  padding: 0 30px;
+  background-color: #ededed;
+  height: 50px;
+  color: #2f3447;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}/*# sourceMappingURL=style.css.map */

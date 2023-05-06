@@ -1,0 +1,85 @@
+.sidebar {
+  background-color: #2f3447;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  transition: all ease-in-out 0.2s;
+}
+.sidebar .top {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  max-width: 100%;
+  transition: all ease-in-out 0.2s;
+}
+.sidebar .top .icon {
+  font-size: 25px;
+  margin-left: auto;
+  color: white;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+.sidebar .center {
+  height: 80%;
+}
+.sidebar .center ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar .center ul li {
+  height: 30px;
+  padding: 15px;
+  margin-top: 10px;
+}
+.sidebar .center ul li a {
+  color: white;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+  font-size: 18px;
+}
+.sidebar .center ul li a .icon {
+  padding-right: 20px;
+}
+.sidebar .center ul li:hover {
+  background-color: rgba(255, 255, 255, 0.248);
+}
+.sidebar .botom .icon {
+  display: none;
+}
+
+.close {
+  width: 70px;
+  transition: all ease-in-out 0.2s;
+}
+.close .top {
+  transition: all ease-in-out 0.2s;
+  padding: 10px;
+}
+.close .top .icon {
+  display: none;
+  cursor: pointer;
+}
+.close .center {
+  height: 70%;
+}
+.close .center ul li a {
+  justify-content: center;
+}
+.close .center ul li a .icon {
+  text-align: center;
+  padding: 0;
+}
+.close .botom {
+  display: flex;
+  justify-content: center;
+}
+.close .botom .icon {
+  display: block;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

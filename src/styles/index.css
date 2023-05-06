@@ -1,0 +1,7 @@
+body {
+  margin: 0;
+  background: rgb(220, 248, 255);
+  background: linear-gradient(90deg, rgb(220, 248, 255) 0%, rgb(230, 234, 255) 45%, rgb(219, 255, 230) 100%);
+  height: 100vh;
+  font-family: "DM Sans", sans-serif;
+}/*# sourceMappingURL=index.css.map */

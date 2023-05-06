@@ -1,0 +1,15 @@
+@import "../../styles/variables";
+
+.header{
+    height: 50px;
+    display: flex;
+    justify-content: right;
+    padding: 20px 40px;
+
+
+    .icon{
+        font-size: 2.5rem;
+        color: $gris-user;
+        
+    }
+}
